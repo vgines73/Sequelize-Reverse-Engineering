@@ -1,11 +1,11 @@
 # Sequelize - Reverse Engineering
 
 ## Description:
-Passport Authentication: This app allows the user to create/login to their account by using their email and password. Email and password are stored in the MySQL database. 
+Passport Authentication: This app allows the user to create/login to their account by entering their email and password. Email and password are stored in the MySQL database. 
 
 ## User Story:
 
-        
+As someone who wants to create an account or log in to the site, I want to know my information is secured in the database.
 
 ## Table of Contents:
 
@@ -53,7 +53,7 @@ Must install npm packages: bcryptjs, express,express-session, mysql2, passport, 
     npm sequelize
 
 ## Usage:
-    HTML, JS, jQuery, CSS, Bootstrap, Workbench, bcryptjs, express,express-session, mysql2, passport, passport-local, sequelize.
+    HTML, JS, jQuery, Node, CSS, Bootstrap, Workbench, bcryptjs, express,express-session, mysql2, passport, passport-local, sequelize.
 
 ## License: 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -83,9 +83,9 @@ passport.js: to authentic user login; requires passport, passport-local, and mod
 ### 2) Models Folder: 
 Using Sequelize to create and use the database. Pretty much mySQL under the hood.
 
-Index.js: connects to server.js, passport.js, api-routes.js; ‘use strict’ pretty much means you need declare variables to create the database. There’s no comments in the file so will add that in the file. See file for comments.
+Index.js: connects to server.js, passport.js, and api-routes.js; ‘use strict’ pretty much means you need declare variables to create the database. There’s no comments in the file so will add that in the file. See file for comments.
 
-user.js: connects to isAuthenticated.js, passport.js, uses bcryptjs for password hashing. Create a User model where it creates the tables for the database (what's needed for email and what's needed for password). There’s another function that compares users password with stored hashed password. Last one is to automatically hash password the first time User is created by using a Hook Method.
+user.js: connects to isAuthenticated.js and passport.js; uses bcryptjs for password hashing. Create a User model where it creates the tables for the database (what's needed for email and what's needed for password). There’s another function that compares users password with stored hashed password. Last one is to automatically hash password the first time User is created by using a Hook Method.
 
 ### 3) Public Folder: 
 Front-End; What the user sees; Bootstrap is used for styling as well;
@@ -125,6 +125,7 @@ Pretty much a list of what libraries and dependencies are needed.
 Creates the server to run the app on localhost. Require npm packages, Set up port, require models for syncing, create express app and configure middleware for authentication, require the routes, then sync database using sequelize and listen on the port. 
 
 ## Challenges: 
+Nothing really, since it was just a tutorial on how each file works. 
 
 ---
 ## Questions:
