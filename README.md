@@ -37,6 +37,8 @@ As someone who wants to create an account or log in to the site, I want to know 
 
 * [Challenges](#Challenges)
 
+* [Changes](#Changes)
+
 * [Questions](#Questions)
 
 
@@ -126,6 +128,9 @@ Creates the server to run the app on localhost. Require npm packages, Set up por
 
 ## Challenges: 
 Nothing really, since it was just a tutorial on how each file works. 
+
+## Changes:
+Not quite sure what I would change. Everything seems functional. What comes to mind is making the site prettier because it looks really dull (no offense to whoever created this). Another thing, I would be create handlebars instead of having multiple html pages. The site looks pretty much the same except for what's inside the body.
 
 ---
 ## Questions:
